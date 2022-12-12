@@ -23,10 +23,12 @@ body{
     background-image: url("../midia/fundo.jpeg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+    background-blend-mode: lighten;
 }
 
 header{
-    padding: 1rem;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,6 +66,7 @@ ul{
 
 .botao{
     font-size: 1rem;
+    font-weight: 500;
     color: white;
     font-family: var(--fonte-destaque);
     background-color: rgba(130, 129, 129, 0.469);
