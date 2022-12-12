@@ -1,30 +1,91 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Ubuntu :wght@300;400;500 & display=swap');
 
 :root {
-    --cor0: #454880;
-    --cor1: #6F77B3;
-    --cor2: #9C86EB;
-
-    --cor3: #5d6099;
-    --cor4: #6f77b390;
-    --cor5: #9C86EB;
-
-    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-destaque: 'Ubuntu', sans-serif;
 }
 
 *{
     margin: 0px;
     padding: 0px;
+    list-style: none;
 }
 
 body{
-    background-color: var(--cor0);
-    font-family: var(--fonte-padrão);
+    background-color: black;
+    height: 100vh;
+    font-family: var(--fonte-destaque);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../midia/fundo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header{
-    display: grid;  
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.foto{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem;
+}
+
+.foto img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+main{
+    margin: 10px;
+}
+
+ul{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.botao{
+    font-size: 1rem;
+    color: white;
+    font-family: var(--fonte-destaque);
+    background-color: rgba(130, 129, 129, 0.469);
+    padding: 10px 50px;
+    margin: 5px;
+    border-radius: 3rem;
+    border: white solid 1px;
+}
+
+#tictok{
+    padding: 10px 63px;
+}
+
+#paypal{
+    padding: 10px 63px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: rgba(208, 206, 206, 0.552);
 }
